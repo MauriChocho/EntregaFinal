@@ -204,7 +204,7 @@ html {
       align-items: center;
       
     }
-    
+    /* MENU CON ICONO Y NAV RESPONSIVE */
     .foto1{
       margin: 0px 20px; }
       .logo{
@@ -458,7 +458,7 @@ html {
                         margin: 50px auto;
                       }
 
-                      @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px){
                         
   .foto1{
     margin-left: 10px;  }
@@ -483,7 +483,8 @@ html {
     padding:0;
     background-color: blanchedalmond;  }
   .menu li a{
-    font-size: 16px;  }
+    padding-right: 5px;
+    font-size: 20px;  }
                         
 
                         .cont-serv{
@@ -522,6 +523,7 @@ html {
       
       .card h5 {
         font-size: 20px;
+        text-align: center;
         padding: 15px; }
       
       .card ul li {
@@ -530,9 +532,14 @@ html {
       .card a {
         text-decoration: none;
         color: black;
+        text-align: center;
         border: 2px solid #423d3d; }
       
       .card a:hover {
         color: green;
         font-size: 20px; }
+
+       .card-body a{
+          align-items: center;
+        }
       
