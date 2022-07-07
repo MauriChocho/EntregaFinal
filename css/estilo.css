@@ -316,7 +316,9 @@ html {
     grid-area: qSomos;
     margin-top: 30px;
     margin-bottom: 200px;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center;
+   }
     .qSomos h3 {
       background-color: #71fb8d;
       grid-area: qS3;
@@ -458,6 +460,8 @@ html {
                         margin: 50px auto;
                       }
 
+
+                      /* MENU DESKTOP */
   @media screen and (min-width: 768px){
                         
   .foto1{
