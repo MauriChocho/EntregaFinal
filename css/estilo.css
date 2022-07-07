@@ -76,48 +76,6 @@
  "footer"; } }*/
                 
 
- /*-------USO DE GRID PARA GALERIA-------*//*
-.container-galeria > * {
-  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 3px;
-  padding: 10px;
-  text-align: center; }
-
-@media (min-width: 321px) {
-  .container-galeria > * {
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 3px;
-    padding: 10px;
-    text-align: center; }
-  .header-galeria {
-    grid-template-areas: header-galeria;
-    display: flex;
-    flex-wrap: wrap; }
-  .main-galeria {
-    grid-template-areas: main-galeria; }
-  .container-galeria {
-    display: grid;
-    gap: 5px;
-    grid-template-areas: "header"
- "navBar"
- "main-galeria"
- "footer"; } }
-
- @media screen and (min-width: 768px) {
-  .container-galeria > * {
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 3px;
-    padding: 10px;
-    text-align: center; }
-  .container-galeria {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 65px 60px 800px 120px;
-    grid-template-areas: "header  header header "
- "navBar navBar navBar"
- "main-galeria main-galeria main-galeria"
- "footer footer footer"; } } */ 
-
-
  /*------USO DE GRID A CONTACTO-----*/
  /* .container-contacto > * {
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
@@ -304,6 +262,8 @@ html {
     margin-top: 30px;
     margin-bottom: 200px;
     text-decoration: none;
+    min-width: 100%;
+    align-content: center;
     text-align: center;
    }
     .qSomos h3 {
@@ -376,7 +336,6 @@ html {
                       .qSomos .h3{
                         margin: 20px auto;}
                       .qSomos .p1{
-                        width: 300px;
                         text-align:center;
                         margin: 20px 10px;}
                       .qSomos img{
@@ -504,13 +463,24 @@ html {
         flex-wrap: wrap;
         justify-content: space-between; }
       
-      .card {
+      .cardIzq {
         background-color: #71fb8d;
         border: black 2px  solid;
         border-radius: 12px;
-        margin: 80px auto;
+        margin: 80px;
+        margin-left: 180px;
         padding: 20px 30px;
         box-shadow: #c9baba; }
+
+        .cardDer {
+          background-color: #71fb8d;
+          border: black 2px  solid;
+          border-radius: 12px;
+          margin: 80px;
+          margin-right: 180px;
+          padding: 20px 30px;
+          box-shadow: #c9baba; }
+
       
       .card h5 {
         font-size: 20px;
@@ -533,4 +503,36 @@ html {
        .card-body a{
           align-items: center;
         }
+
+        /*-------USO DE GRID PARA GALERIA-------*/
+
+
+@media (min-width: 480px) {
+  .header-galeria {
+    grid-template-areas: header-galeria;
+    display: flex;
+    flex-wrap: wrap; }
+  .main-galeria {
+    grid-template-areas: main-galeria; }
+  .container-galeria {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: "header"
+ "navBar"
+ "main-galeria"
+ "footer"; } }
+
+ 
+ @media screen and (min-width: 768px) {
+   .main-galeria{
+    margin: 100px;
+    max-height: 60%;
+   }
+  .container-galeria {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 65px 60px 800px 120px;
+    grid-template-areas: "header  header header "
+ "navBar navBar navBar"
+ "main-galeria main-galeria main-galeria"
+ "footer footer footer"; } } 
       
