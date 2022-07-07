@@ -21,17 +21,6 @@
       .menu li a:hover {
         zoom: 1.2; }
          */
-  
-  
-
-
-  
-
-           
-
-
-                
-
 
                    /*--------USO DE GRID A SERVICIOS--------*//*
 .container-serv > * {
@@ -39,8 +28,6 @@
   border-radius: 3px;
   padding: 10px;
   text-align: center; }
-
-
 
 
 @media (min-width: 321px) {
@@ -373,7 +360,7 @@ html {
             grid-area: p3; }
 
             /* GRID AL INDEX */
-                  @media screen and (min-width: 768px) {
+                  @media screen and (min-width: 480px) {
                     .header {
                       grid-area: header;}
                     .navBar {
