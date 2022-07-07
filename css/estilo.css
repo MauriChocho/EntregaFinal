@@ -451,6 +451,7 @@ html {
 
       /* GRID PRODUCTO */
 
+
       .main-product {
         padding: 30px auto; }
       
@@ -502,27 +503,33 @@ html {
           align-items: center;
         }
 
+/* PRODUCTOS */
+
+@media screen and (min-width: 480px) {
+  
+        .cardIzq {
+          background-color: #71fb8d;
+          border: black 2px  solid;
+          border-radius: 12px;
+          margin: 80px;
+          margin-left: 180px;
+          padding: 20px 30px;
+          box-shadow: #c9baba; }
+      
+          .cardDer {
+            background-color: #71fb8d;
+            border: black 2px  solid;
+            border-radius: 12px;
+            margin: 80px;
+            margin-right: 180px;
+            padding: 20px 30px;
+            box-shadow: #c9baba; }
+          }
         /*-------USO DE GRID PARA GALERIA-------*/
 
 
 @media (min-width: 768px) {
-  .cardIzq {
-    background-color: #71fb8d;
-    border: black 2px  solid;
-    border-radius: 12px;
-    margin: 80px;
-    margin-left: 180px;
-    padding: 20px 30px;
-    box-shadow: #c9baba; }
-
-    .cardDer {
-      background-color: #71fb8d;
-      border: black 2px  solid;
-      border-radius: 12px;
-      margin: 80px;
-      margin-right: 180px;
-      padding: 20px 30px;
-      box-shadow: #c9baba; }
+  
   .header-galeria {
     grid-template-areas: header-galeria;
     display: flex;
