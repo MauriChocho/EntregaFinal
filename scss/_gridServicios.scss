@@ -2,7 +2,7 @@
   
                        .main-serv {
                         grid-area: main-serv; 
-                        
+                       }
                         .servicios {
                           grid-area: servicios;
                           display: flex;
@@ -26,18 +26,20 @@
                             text-align: center;
                             border-radius: 3px;
                             text-decoration: none;
-                            list-style: none; }
+                            list-style: none; 
 
-                            &hover {
+                            &:hover {
                               zoom: 1.25;
                               background-color: #f5f5f5; }
+                            }
+                            
                       .serv-1 {grid-area: serv-1;}
                       .serv-2 {grid-area: serv-2; }
                       .serv-3 {grid-area: serv-3; }
 
                         }
   
-                      }
+                      
   
                         /* GRID SERVICIOS */
   

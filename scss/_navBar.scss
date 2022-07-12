@@ -5,28 +5,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-  
-  
+}
   .foto1{
     margin: 0px 20px; }
     .logo{
       display: flex;
       justify-content: space-evenly; 
-      .h2{
+      h2{
         padding-top: 5px; }
       }
-        
-        .bar-btn{
-          position:fixed right;
-          font-size: 25px;
-          color: black;
-          margin-right: 20px;
-          cursor: pointer; }
-           .header > * {
-            border-bottom: 2px black solid;
-            
-          }
+
+      .bar-btn{
+        position:fixed right;
+        font-size: 25px;
+        color: black;
+        margin-right: 20px;
+        cursor: pointer; }
+
+
+
           .menu{
             position:fixed;
             width: 100%;
@@ -39,9 +36,9 @@
               line-height: 30px;
               transition: all .5s;
               background-color: blanchedalmond;
-              padding: 30px 0px; }
+              padding: 30px 0px; 
               
-              .a{
+              a{
                 color: black;
                 font-style: normal;                 
                 font-size: 1rem;
@@ -49,18 +46,22 @@
                 background-color: blanchedalmond;
                 text-decoration: none; }
               }
+              }
+            
+                 .header > * {
+                  border-bottom: 2px black solid;
+                }
+                .header{grid-area: header;}
+
                   #check{
                     display: none; }
                     
                     #check:checked ~ .menu{
                       height: 65px;
                       
-                      .li{
+                      li{
                         display: block; }
                       }
-
-                      }
-
 
                     /* MENU DESKTOP */
 @media screen and (min-width: 768px){
@@ -79,7 +80,7 @@
    transition: none;
    text-align: right;
    margin-right: 20px; 
-.li{
+li{
   display: inline-block;
   line-height: 100px;
   margin: 0 5px;
@@ -87,7 +88,7 @@
   list-style: none;
   padding:0;
   background-color: blanchedalmond;  
-.a{
+a{
   padding-right: 5px;
   font-size: 20px;  }
 }
