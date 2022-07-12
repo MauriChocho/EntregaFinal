@@ -1,0 +1,22 @@
+ /* MOBILE GALERIA */
+  
+ .main-galeria{
+    margin: 100px;
+  }
+  
+            
+   /*-------USO DE GRID PARA GALERIA-------*/
+  
+  
+   @media screen and (min-width: 768px) {
+     .main-galeria{
+      margin: 100px;
+      max-height: 60%;
+     }
+    .container-galeria {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 65px 60px 800px 120px;
+      grid-template-areas: "header  header header "
+   "navBar navBar navBar"
+   "main-galeria main-galeria main-galeria"
+   "footer footer footer"; } } 
